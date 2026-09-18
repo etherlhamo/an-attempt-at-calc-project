@@ -1,0 +1,70 @@
+
+*{
+        box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    /* overflow-x: hidden; */
+    background-image: url("images/HR4QrvyXIAg1IDV.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-position: center center;
+
+
+}
+image{
+    width: 100%;
+    height: auto;
+}
+.the-grid{
+    width: clamp(380px, 30dvw, 700px);
+    aspect-ratio: 2/1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: gold;
+    align-self: center;
+}
+#container{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 100px;
+
+}
+.input-field{
+    padding: 2vh 8vw;
+    border: 2px dotted red;
+    font-size: clamp(2rem,7vw,4rem);
+    width: 70%;
+    margin: 0;
+    text-align: right;
+
+}
+.digit{
+    font-size:clamp(1rem , 4vw,3rem);
+}
+.operator{
+    font-size:clamp(1rem , 4vw,3rem);
+}
+#equal{
+    font-size:clamp(1rem , 4vw,3rem);
+
+}
+#clear{
+    font-size:clamp(1rem , 4vw,3rem);
+    grid-column: 1/-1;
+}
+#container  div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
