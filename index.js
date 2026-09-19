@@ -48,7 +48,7 @@ function calculate(expression) {
     for (let i = 0; i < parts.length; i++) {
         if (!compare.includes(parts[i])) {
             parts[i] = Number(parts[i])
-        }
+        } 
     }
 
     for (let i = 0; i < parts.length; i++) {
@@ -89,12 +89,11 @@ function calculate(expression) {
 }
 equal.addEventListener("click", () => {
     let expression = input.value
-    let result = Math.floor(calculate(expression)*1000)
+    let result = (calculate(expression))
 
-    input.value = Math.floor(result *1000)
+    input.value = (result)
 })
 
 clear.addEventListener("click", ()=>{
-    expression =""
     input.value =""
 })
